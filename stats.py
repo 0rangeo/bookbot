@@ -8,3 +8,10 @@ def character_count(text):
     for i in text_list:
         count_dictionary[i] = text.lower().count(i)
     return(count_dictionary)
+
+# def sort_on(dict):
+#     return dict[i]
+
+def sorted_dict(character_dict):
+    # character_dict.sort(reverse=True, key=character_dict[])
+    return(sorted(character_dict.items(), key=lambda item: item[1], reverse=True))
